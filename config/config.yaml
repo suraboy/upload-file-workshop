@@ -1,0 +1,24 @@
+server:
+  port: 3000
+mail:
+  api-key: ""
+storage:
+  services:
+    - name: upload-file-workshop-local
+      type: gcs
+      bucket: upload-file-workshop-local
+      config:
+        json_credential: |
+          {
+              "type": "service_account",
+              "project_id": "",
+              "private_key_id": "",
+              "private_key": "",
+              "client_email": "",
+              "client_id": "",
+              "auth_uri": "",
+              "token_uri": "",
+              "auth_provider_x509_cert_url": "",
+              "client_x509_cert_url": ""
+          }
+
